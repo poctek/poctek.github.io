@@ -1,1 +1,40 @@
-<h1 class="blog_name">My Blog</h1>
+---
+layout: default
+---
+<div class="about_me">
+    <p>
+	<a href="{{site.baseurl}}/about_me.html"><i>
+	    Some people believe that blogging helps progressing. I hope, the're right...
+	</i></a>
+    </p>
+</div>
+
+<div class="post_list">
+    <ul>
+	{% for post in paginator.posts %}
+	<li>
+	    <div class="post_thumb">
+
+		<div class="thumb_post_info">
+		    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+		</div>
+
+		<div class="thumb_post_date">
+		    <p>{{ post.date || date_to_long_string }}</p>
+		</div>
+
+	    </div>
+	</li>
+	{% endfor %}
+
+    </ul>
+</div>
+
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}"><=</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">=></a>
+    {% endif %}
+</div>

@@ -1,0 +1,63 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+
+.about_me {
+    a {
+	font-weight: normal;
+    }
+}
+
+.main_container {
+    width: 40%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.pagination {
+    line-height: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.post_list {
+    overflow: hidden;
+
+    ul {
+	list-style: none;
+    }
+
+    .post_thumb {
+	
+	.thumb_post_info {
+	    width: 50%;
+	    float: left;
+	    text-align: left;
+	    margin-left: -20px;
+	}	
+
+	.thumb_post_date {
+	    width: 50%;
+	    float: right;
+	    text-align: right;
+	    padding: 0 20px 0 0;
+	}
+    }
+}
+
