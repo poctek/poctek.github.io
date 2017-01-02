@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<header class="index">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <a class="button" href="/">Home</a>
+</header>
+
+<main>
+  <article class="post">
+    <div class="post-meta">
+      <div class="post-date">
+        {{ page.date | date: "%B %e, %Y" }}
+      </div>
+    </div>
+
+    <div class="post-body">
+      {{ content }}
+    </div>
+
+    <div class="posts-navigation">
+      <div class="next-post">
+        {% if page.next %}
+          <a class="button" href="{{ site.baseurl }}{{ page.next.url }}">Next</a>
+        {% endif %}
+      </div>
+      <div class="back-link">
+        <a class="button" href="{{ site.baseurl }}/">Home</a>
+      </div>
+      <div class="previous-post">
+        {% if page.previous %}
+          <a class="button" href="{{ site.baseurl }}{{ page.previous.url }}">Previous</a>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+</main>

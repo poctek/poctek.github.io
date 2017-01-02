@@ -1,0 +1,73 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+  color: $base-grey;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  justify-content: center;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+h1,
+h2,
+strong {
+  color: $bold-grey;
+}
+
+h1,
+.posts-list {
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+  }
+}
+
+code,
+pre {
+  background: $code-background;
+  display: block;
+}
+
+pre {
+  border: 1px solid $code-border-color;
+  border-radius: 3px;
+}
+
+code {
+  overflow: auto;
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+}
+
+a {
+  color: $link-base;
+}
+
+.posts-list,
+article {
+  padding: 4em;
+}
+
+@media(max-width: 768px) {
+  .posts-list,
+  article {
+    padding: 1em;
+  }
+}

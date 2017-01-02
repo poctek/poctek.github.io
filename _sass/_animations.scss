@@ -1,0 +1,48 @@
+.blinking {
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: $link-base;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: $link-base;
+  }
+}
+
+@-moz-keyframes "blink" {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: $link-base;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: $link-base;
+  }
+}
+

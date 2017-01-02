@@ -1,0 +1,15 @@
+baseurl: ""
+permalink: /:title/
+paginate: 10
+
+gems: [jekyll-paginate]
+
+sass:
+  style: expanded
+  sass_dir: _sass
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'

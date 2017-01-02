@@ -1,0 +1,30 @@
+.posts-list {
+  padding: 4em;
+
+  .post-thumb {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+}
+
+.pages-navigation {
+  display: flex;
+  padding: 0 1em;
+  padding-bottom: 4em;
+
+  div {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 500px) {
+  .posts-list {
+    .post-date {
+      display: none;
+    }
+  }
+}

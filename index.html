@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<header class="index">
+  <h1 class="page-title">
+    #<span id="tag-container"></span><span class="blinking">|</span>
+  </h1>
+  {% include contact-links.html %}
+</header>
+
+<main>
+  <div class="posts-list">
+    {% for post in paginator.posts %}
+      <div class="post-thumb">
+        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+
+        <div class="post-date">{{ post.date | date: "%B %e, %Y" }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="pages-navigation">
+    <div class="next-page">
+      {% if paginator.previous_page %}
+        <a class="button" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Newer</a>
+      {% endif %}
+    </div>
+    <div class="previous-page">
+      {% if paginator.next_page %}
+        <a class="button" href="{{ site.baseurl }}{{ paginator.next_page_path }}">Older</a>
+      {% endif %}
+    </div>
+  </div>
+</main>

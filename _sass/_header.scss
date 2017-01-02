@@ -1,0 +1,52 @@
+header {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+  max-width: 100%;
+  padding: 16vw 2em 4vw;
+  text-align: center;
+
+  h1 {
+    color: $header-bold-color;
+    font-size: 2.5em;
+    font-weight: 300;
+
+    &.page-title {
+      align-self: center;
+      background: $page-title-background;
+      border-radius: 5px;
+      padding: .225em;
+    }
+  }
+
+  .button {
+    align-self: center;
+  }
+
+  .buttons-container {
+    .button {
+      margin: 0 10px;
+    }
+  }
+
+  .page-title {
+    color: $link-base;
+    font-weight: 300px;
+  }
+
+  .logo {
+    img {
+      border-radius: 50%;
+      height: 120px;
+      width: 120px;
+    }
+  }
+
+  &.index {
+    background-image: url('/assets/header-background.jpeg');
+  }
+}

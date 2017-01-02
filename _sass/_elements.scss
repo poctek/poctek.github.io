@@ -1,0 +1,18 @@
+.button {
+  border: 1px solid $button-base;
+  border-radius: 290486px;
+  color: $button-base;
+  font-size: .6em;
+  letter-spacing: .2em;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: none 200ms ease-out;
+  transition-property: background, color;
+  text-align: center;
+
+  &:hover {
+    background: $button-base;
+    color: $link-button-hover-color;
+  }
+}

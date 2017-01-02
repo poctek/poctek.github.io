@@ -1,0 +1,42 @@
+article {
+  .post-date {
+    align-items: center;
+    border-bottom: 1px solid $code-border-color;
+    border-top: 1px solid $code-border-color;
+    display: flex;
+    margin-top: 24px;
+    padding: 8px 0;
+  }
+
+  .posts-navigation {
+    display: flex;
+    justify-content: space-between;
+
+    .next-post,
+    .previous-post,
+    .back-link {
+      display: flex;
+      flex-grow: 1;
+      width: 100%;
+    }
+
+    .next-post,
+    .previous-post {
+      .button {
+        min-width: 80px;
+      }
+    }
+
+    .back-link {
+      justify-content: center;
+    }
+
+    .next-post {
+      justify-content: flex-start;
+    }
+
+    .previous-post {
+      justify-content: flex-end;
+    }
+  }
+}
