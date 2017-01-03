@@ -5,7 +5,8 @@ const URLS_TO_CACHE = [
   '/assets/css/main.css',
   '/assets/js/script.js',
   '/assets/header-background.jpeg',
-  '/assets/favicon-96x96.png'
+  '/assets/favicons/favicon-96x96.png',
+  '/assets/favicons/favicon-96x96.png'
 ]
 
 this.addEventListener('install', event => {
