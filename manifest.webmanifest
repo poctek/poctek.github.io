@@ -5,6 +5,7 @@
   "display": "standalone",
   "background_color": "#bf360c",
   "description": "My blog",
+  "theme_color": "#bf360c"
   "icons": [
     {
       "src": "\/assets\/favicons\/android-icon-36x36.png",
