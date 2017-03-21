@@ -38,18 +38,17 @@ h1,
 code,
 pre {
   background: $code-background;
-  display: block;
 }
 
 pre {
   border: 1px solid $code-border-color;
   border-radius: 3px;
+  display: block;
 }
 
 code {
   overflow: auto;
   padding: 2px 4px;
-  vertical-align: text-bottom;
 }
 
 pre {
