@@ -32,7 +32,7 @@ function fromNetwork(request, failover) {
   fetch(request).then(response => {
     clearTimeout(networkTimeoutError)
     return Promise.resolve(response)
-  }).catch(error => return Promise.reject(error))
+  }).catch(error => Promise.reject(error))
 }
 
 function fromCache(request) {
