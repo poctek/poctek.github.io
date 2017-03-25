@@ -15,9 +15,8 @@ this.addEventListener('install', event => {
 })
 
 this.addEventListener('fetch', event => {
-  event.respondWith(fromNetwork(event.request).catch(error => {
-    fromCache(event.request)
-  }))
+  event.respondWith(fromNetwork(event.request)
+    .catch(() => fromCache(event.request)))
 })
 
 function initialCache() {
@@ -29,10 +28,10 @@ function initialCache() {
 function fromNetwork(request, failover) {
   let networkTimeoutError = setTimeout(() => console.log('No connection'), NETWORK_TIMEOUT)
 
-  fetch(request).then(response => {
-    clearTimeout(networkTimeoutError)
-    return Promise.resolve(response)
-  }).catch(error => Promise.reject(error))
+  return (fetch(request).then(response => {
+      clearTimeout(networkTimeoutError)
+      return Promise.resolve(response)
+  }).catch(() => Promise.reject()))
 }
 
 function fromCache(request) {
